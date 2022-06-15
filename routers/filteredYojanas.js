@@ -41,7 +41,7 @@ router.post('/', async(req,res) => {
       let agefilteroutput = []
       for(let i = 0; i<data.length; i++ ){
           
-          if(data[i].ageLowerLimit  <=  inputData.ageLowerLimit && data[i].ageHigherLimit >= inputData.ageHigherLimit){
+          if(data[i].ageLowerLimit  <=  inputData.ageHigherLimit && data[i].ageHigherLimit >= inputData.ageLowerLimit){
                agefilteroutput.push(data[i])
           }
       }

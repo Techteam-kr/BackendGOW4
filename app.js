@@ -31,6 +31,15 @@ app.use('/inputmob', inputmobnoRouter)
 const verifyotpRouter = require('./routers/verifyotp')
 app.use('/verifyotp', verifyotpRouter)
 
+const searchApplicantRouter = require('./routers/searchApplicant')
+app.use('/searchApplicant', searchApplicantRouter)
+
+const updateApplicantionRouter = require('./routers/changeApplicationStatus')
+app.use('/updateApplicantion', updateApplicantionRouter)
+
+const dashboardStatusRouter = require('./routers/dashboardStatus')
+app.use('/dashboardStatus', dashboardStatusRouter)
+
 
 
 app.listen(9002, () => {
