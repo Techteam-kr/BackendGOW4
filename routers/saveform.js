@@ -39,12 +39,13 @@ router.post('/', async(req,res) => {
     //setting the Form ID
 
     formData = req.body;
-    formData.id = req.body.mobileNumber + req.body.wardNumber
+    
+    formData.id = Date.now()
     
     var myData = new Users(formData);
     myData.save()
         .then(item => {
-            res.send("Form saved to database with ID " + formData.id);
+            res.send("Form saved to database with ID " + formData.id + " please note down the ID ");
         })
         .catch(err => {
             res.status(400).send("Unable to save to database");

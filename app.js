@@ -40,6 +40,9 @@ app.use('/updateApplicantion', updateApplicantionRouter)
 const dashboardStatusRouter = require('./routers/dashboardStatus')
 app.use('/dashboardStatus', dashboardStatusRouter)
 
+const searchApplicantMobRouter = require('./routers/searchApplicantMob')
+app.use('/searchApplicantMob', searchApplicantMobRouter)
+
 
 
 app.listen(9002, () => {

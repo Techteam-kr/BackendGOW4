@@ -44,3 +44,23 @@ Status Values - "Accepted" , "Rejected" , "inProgress"
     "Accepted": 1,
     "total": 4
 }
+
+////////////////////////////////////////////////////////////////////////
+
+4) URL - localhost:9002/searchApplicantMob - POST
+   Request -  {
+    "searchValue" : "111123123"
+}
+SearchValue is the FormID
+    Response - [
+    {
+        "_id": "62aab9571baa244b963429f9",
+        "aadharNumber": "12345",
+        "mobileNumber": "112",
+        "wardNumber": "123123",
+        "id": "1655355735453",
+        "yojanaName": "Pradhan Mantri Awas Yojana",
+        "status": "Applied",
+        "__v": 0
+    }
+]

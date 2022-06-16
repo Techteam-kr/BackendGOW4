@@ -16,7 +16,7 @@ router.post('/', async(req,res) => {
 
     searchValue = req.body.searchValue;
     console.log(searchValue)
-    Users.find({ id: req.body.searchValue}, function (err, docs) {
+    Users.find({ mobileNumber: req.body.searchValue}, function (err, docs) {
         if (err){
             console.log(err);
         }
