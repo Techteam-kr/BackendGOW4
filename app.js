@@ -43,6 +43,9 @@ app.use('/dashboardStatus', dashboardStatusRouter)
 const searchApplicantMobRouter = require('./routers/searchApplicantMob')
 app.use('/searchApplicantMob', searchApplicantMobRouter)
 
+const getAllApplicantsRouter = require('./routers/getAllApplicants')
+app.use('/getAllApplicants', getAllApplicantsRouter)
+
 
 
 app.listen(9002, () => {
